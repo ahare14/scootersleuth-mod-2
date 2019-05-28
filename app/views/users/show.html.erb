@@ -30,6 +30,12 @@
   <input type="submit">
 </form>
 
+<%= form_for :user, url: users_path do |f| %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.submit %>
+<% end %>
+
 </br/br>
 <h4><%= link_to 'Full Scooter List', scooters_path %></h4>
 <h4><%= link_to 'Preferred Scooters Near Me', scooters_path  %></h4>
